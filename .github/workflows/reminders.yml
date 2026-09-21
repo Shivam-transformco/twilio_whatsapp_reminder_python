@@ -3,7 +3,7 @@ name: Daily WhatsApp Reminders
 on:
   schedule:
     - cron: "30 1 * * *" # 7:00 AM IST
-    - cron: "00 22 * * *" # 3:20 AM IST
+    - cron: "17 22 * * *" # 3:47 AM IST
   workflow_dispatch: # manual trigger for testing
     inputs:
       force:
