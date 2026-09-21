@@ -24,7 +24,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python send_reminders.py ${{ github.event.inputs.force == 'true' && '--force' || '' }}
+      - run: python send_reminders.py --force
         env:
           MONGO_URI: ${{ secrets.MONGO_URI }}
           MONGO_DB_NAME: ${{ secrets.MONGO_DB_NAME }}
